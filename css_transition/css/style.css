@@ -1,0 +1,101 @@
+/* Change background color */
+
+body {
+    background-color: lightblue;
+}
+
+
+/* Change box class */
+
+.box {
+    width: 200px;
+    height: 200px;
+    background: lightpink;
+    text-align: center;
+    /* Margins: top, right, bottom, left */
+    margin: 200px auto;
+    /* css animation (more like transition) */
+    animation-name: square-to-circle;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+.box2 {
+    width: 200px;
+    height: 200px;
+    background: rgb(79, 10, 119);
+    text-align: center;
+    margin: 100px 400px auto;
+    animation-name: square-to-circle2;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+
+/* like @override function */
+
+@keyframes square-to-circle {
+    /* percent of time of animation */
+    0% {
+        border-radius: 0;
+        background: lightpink;
+        transform: rotate(0deg);
+    }
+    25% {
+        /* starts at top left > top right > */
+        border-radius: 50% 0 0 0;
+        background: rgb(248, 166, 179);
+        transform: rotate(45deg);
+    }
+    50% {
+        border-radius: 50% 50% 0 0;
+        background: palevioletred;
+        transform: rotate(90deg);
+    }
+    75% {
+        border-radius: 50% 50% 50% 0;
+        background: rgb(248, 166, 179);
+        transform: rotate(135deg);
+    }
+    100% {
+        border-radius: 50%;
+        background: lightpink;
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes square-to-circle2 {
+    /* percent of time of animation */
+    0% {
+        border-radius: 0;
+        background: rgb(79, 10, 119);
+        transform: rotate(0deg) skewX(0deg);
+    }
+    25% {
+        /* starts at top left > top right > */
+        border-radius: 50% 0 0 0;
+        background: rgb(96, 30, 134);
+        transform: rotate(45deg) skewX(20deg);
+    }
+    50% {
+        border-radius: 50% 50% 0 0;
+        background: rgb(113, 64, 161);
+        transform: rotate(90deg) skewX(40deg);
+    }
+    75% {
+        border-radius: 50% 50% 50% 0;
+        background: rgb(96, 30, 134);
+        transform: rotate(135deg) skewX(60deg);
+    }
+    100% {
+        border-radius: 50%;
+        background: rgb(79, 10, 119);
+        transform: rotate(180deg) skewX(80deg);
+    }
+}
