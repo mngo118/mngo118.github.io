@@ -1,0 +1,59 @@
+body {
+    text-align: center;
+    font-family: Arial, Helvetica;
+    background-color: rgb(248, 245, 241);
+    color: rgb(68, 44, 7);
+    margin: 0;
+}
+
+.header {
+    color: rgb(248, 236, 219);
+    padding: 20px;
+    background-color: rgb(59, 36, 2);
+}
+
+
+/* Source: https://www.w3schools.com/howto/howto_css_topnav_equal_width.asp*/
+
+.nav {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    font-size: large;
+    background-color: rgb(100, 62, 4);
+}
+
+.nav a {
+    float: left;
+    text-decoration: none;
+    font-size: 17px;
+    width: 33.33%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    color: rgb(248, 234, 212);
+}
+
+.nav a:hover {
+    background-color: rgb(80, 54, 5);
+}
+
+.active {
+    background-color: rgb(153, 100, 22);
+}
+
+.body {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.horizontal img {
+    width: 300px;
+    height: 230px;
+}
+
+.vertical img {
+    width: 300px;
+    height: 420px;
+}
