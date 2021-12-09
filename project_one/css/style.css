@@ -43,7 +43,7 @@ body {
     background-color: rgb(153, 100, 22);
 }
 
-.body {
+.main {
     margin-left: 20%;
     margin-right: 20%;
 }
@@ -56,4 +56,37 @@ body {
 .vertical img {
     width: 300px;
     height: 420px;
+}
+
+
+/* Source: CSS Pseudo Demo */
+
+#contact_div {
+    background-color: rgb(252, 227, 195);
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#contact_div:hover {
+    background-color: rgb(221, 180, 126);
+}
+
+#contact_div a:link {
+    color: rgb(153, 98, 17);
+}
+
+#contact_div a:visited {
+    color: rgb(114, 73, 11);
+}
+
+#contact_div a:hover {
+    color: rgb(250, 226, 190);
+}
+
+#contact_div a:active {
+    color: rgb(114, 73, 11);
+}
+
+p:last-child {
+    font-style: italic;
 }
