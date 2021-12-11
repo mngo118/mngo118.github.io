@@ -96,6 +96,10 @@ body {
     color: rgb(114, 73, 11);
 }
 
+.recipe_main a:visited {
+    color: rgb(90, 57, 9);
+}
+
 .recipe_img {
     float: left;
     width: 40%;
@@ -124,4 +128,8 @@ footer a:link {
 
 footer a:hover {
     color: rgb(114, 73, 11);
+}
+
+footer a:visited {
+    color: rgb(90, 57, 9);
 }
