@@ -43,9 +43,31 @@ body {
     background-color: rgb(153, 100, 22);
 }
 
+
+/* Source: https://www.w3schools.com/css/css_website_layout.asp */
+
+.hidden_side {
+    float: left;
+    width: 60px;
+}
+
 .main {
-    margin-left: 20%;
-    margin-right: 20%;
+    float: left;
+    width: 50%;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+.side {
+    float: left;
+    width: 40%;
+    margin: 20px;
+    padding-top: 30px;
+}
+
+.side img {
+    width: 200px;
+    height: 300px;
 }
 
 .horizontal img {
@@ -58,35 +80,48 @@ body {
     height: 420px;
 }
 
-
-/* Source: CSS Pseudo Demo */
-
-#contact_div {
-    background-color: rgb(252, 227, 195);
-    margin-left: 20%;
-    margin-right: 20%;
+.recipe_main {
+    float: left;
+    width: 50%;
+    margin-top: 20px;
+    text-align: left;
+    line-height: 1.5;
 }
 
-#contact_div:hover {
-    background-color: rgb(221, 180, 126);
-}
-
-#contact_div a:link {
+.recipe_main a:link {
     color: rgb(153, 98, 17);
 }
 
-#contact_div a:visited {
+.recipe_main a:hover {
     color: rgb(114, 73, 11);
 }
 
-#contact_div a:hover {
-    color: rgb(250, 226, 190);
+.recipe_img {
+    float: left;
+    width: 40%;
+    margin: 20px;
+    padding-top: 30px;
+    line-height: 1.5;
 }
 
-#contact_div a:active {
+.recipe_img img {
+    width: 400px;
+    height: 400px;
+}
+
+
+/* Source: CSS Pseudo Demo (Kind of) */
+
+footer {
+    clear: both;
+    background-color: rgb(248, 236, 219);
+    padding: 10px;
+}
+
+footer a:link {
+    color: rgb(153, 98, 17);
+}
+
+footer a:hover {
     color: rgb(114, 73, 11);
-}
-
-p:last-child {
-    font-style: italic;
 }
