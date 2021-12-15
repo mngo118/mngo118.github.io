@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project | Themed Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@700&display=swap" rel="stylesheet">
+    <!-- source: https://www.w3schools.com/html/html_images_background.asp and https://fonts.google.com/specimen/Gwendolyn#standard-styles -->
+    <style>
+        body {
+            background-image: url('images/background.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            text-align: center;
+            font-family: 'Gwendolyn', cursive;
+            color: white;
+            font-size: xx-large;
+            line-height: 0.5;
+            margin: 50px;
+            margin-top: 200px;
+        }
+        
+        #countdown {
+            border-radius: 25px;
+            background: white;
+            padding: 20px;
+            padding-top: 30px;
+            width: 200px;
+            height: 40px;
+            color: rgb(136, 15, 15);
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Christmas is Coming!</h1>
+    <p><em>Tis the season</em></p>
+    <!-- Source: https://www.w3schools.com/howto/howto_js_countdown.asp -->
+    <p id="countdown"></p>
+
+    <script>
+        var countDownDate = new Date("Dec 25, 2021 00:00:00").getTime();
+
+        var x = setInterval(function() {
+
+            var now = new Date().getTime();
+
+            var distance = countDownDate - now;
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+        }, 1000);
+    </script>
+</body>
+
+</html>
