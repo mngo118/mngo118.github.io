@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@700&display=swap" rel="stylesheet">
-    <!-- source: https://www.w3schools.com/html/html_images_background.asp and https://fonts.google.com/specimen/Gwendolyn#standard-styles -->
+    <!-- source: https://www.w3schools.com/html/html_images_background.asp and https://fonts.google.com/specimen/Gwendolyn#standard-styles and https://stackoverflow.com/questions/24469375/keeping-text-size-the-same-on-zooming -->
     <style>
         body {
             background-image: url('images/background.jpg');
@@ -20,10 +20,10 @@
             text-align: center;
             font-family: 'Gwendolyn', cursive;
             color: white;
-            font-size: xx-large;
+            font-size: 7vh;
             line-height: 0.5;
             margin: 50px;
-            margin-top: 200px;
+            margin-top: 15%;
         }
         
         #countdown {
@@ -31,8 +31,9 @@
             background: white;
             padding: 20px;
             padding-top: 30px;
-            width: 200px;
-            height: 40px;
+            /* Source: https://stackoverflow.com/questions/38017547/how-make-a-div-container-responsive */
+            aspect-ratio: 100/10;
+            width: 50%;
             color: rgb(136, 15, 15);
             margin: auto;
         }
