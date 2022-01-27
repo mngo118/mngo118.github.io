@@ -1,0 +1,139 @@
+* {
+    /* Telling it to now push anything out (keeps padding push within) */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(58, 40, 22);
+}
+
+h1 {
+    /* vw = view width (browser determines how big it should be off of view width) */
+    font-size: 5vw;
+}
+
+h2 {
+    font-size: 2vw;
+}
+
+h3 {
+    font-size: 1.8vw;
+}
+
+p {
+    font-size: 1.6vw;
+}
+
+a {
+    font-size: 1.6vw;
+    color: rgb(214, 196, 184);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(139, 110, 91);
+}
+
+.container {
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.header {
+    background-color: rgb(65, 41, 25);
+    color: rgb(247, 235, 228);
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* Responsive Elements */
+
+.left {
+    float: left;
+    width: 20%;
+}
+
+.main {
+    float: left;
+    width: 60%;
+    padding: 0 20px;
+}
+
+.right {
+    float: left;
+    width: 20%;
+    background-color: rgb(65, 41, 25);
+    color: rgb(247, 235, 228);
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.right img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Nav Style (change css format): */
+
+.nav a {
+    background-color: rgb(100, 58, 31);
+    color: rgb(248, 239, 223);
+    text-decoration: none;
+    display: block;
+    /* gets each a tag to fill out all of left container */
+    width: 100%;
+    text-align: center;
+    /* consistent with the right container */
+    margin-top: 10px;
+    padding: 8px;
+}
+
+.nav a:hover {
+    background-color: rgb(175, 120, 86);
+    color: rgb(32, 19, 10);
+}
+
+
+/* Footer Style: */
+
+.footer {
+    background-color: rgb(39, 25, 17);
+    color: rgb(235, 221, 212);
+    padding: 20px;
+    /* Clears the float (technically could just say clear: left) */
+    clear: both;
+    margin-top: 10px;
+}
+
+footer {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 1.6vw;
+}
+
+
+/* Stack for phone screen */
+
+@media only screen and (max-width:620px) {
+    .left,
+    .main,
+    .right {
+        width: 100%;
+    }
+}
+
+
+/* Tablet size (in between) */
+
+@media (min-width: 621px) and (max-width: 1000px) {
+    .main {
+        width: 80%;
+    }
+    .right {
+        width: 100%;
+    }
+}
