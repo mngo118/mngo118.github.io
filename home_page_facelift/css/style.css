@@ -4,6 +4,7 @@ body {
 
 button {
     background-color: white;
+    opacity: 0.8;
     color: black;
     border-radius: 8px;
     padding: 10px;
@@ -52,7 +53,7 @@ button:hover {
 }
 
 .navbar i:hover {
-    color: rgb(66, 66, 66);
+    color: rgb(94, 94, 94);
 }
 
 
@@ -159,6 +160,8 @@ button:hover {
 }
 
 .sub-content {
+    background-color: rgb(49, 49, 49);
+    color: white;
     display: grid;
     grid-template-columns: 33.33% 33.33% 33.33%;
     grid-column-gap: 2%;
@@ -183,4 +186,12 @@ button:hover {
 
 .footer i {
     padding-right: 10px;
+}
+
+.footer i:hover {
+    color: rgb(66, 66, 66);
+}
+
+.footer a {
+    color: rgb(228, 222, 222);
 }
