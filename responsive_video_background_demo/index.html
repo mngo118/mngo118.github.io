@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            margin: 20px;
+        }
+    </style>
+    <title>Responsive CSS Video Background</title>
+</head>
+
+<body>
+    <h1>Responsive CSS Video Background</h1>
+    <p>This tutorial will teach you how to add a video background to your website that will respond to different screen sizes.</p>
+    <p>You can check out the finished product <a href="example.html" target="_blank">here</a>. But let's get started</p>
+    <p>First you'll want to build your base website. I just made a centered div with text with this code:</p>
+    <pre>
+        <code>
+            IN HTML DOCUMENT: 
+            &lt;div id="textdiv"&gt;
+                &lt;h1&gt;Lorem ipsum&lt;/h1&gt;
+                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Curabitur porta dictum turpis, eu mollis justo gravida ac. 
+                Proin non eros blandit, rutrum est a, cursus quam.&lt;/p&gt;
+            &lt;/div&gt;
+
+            IN CSS DOCUMENT:
+                html,
+                body {
+                    width: 100vw;
+                    height: 100vh;
+                    margin: 0;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+                #demo-text {
+                    text-align: center;
+                    margin: 5% 20%;
+                }
+                
+        </code>
+    </pre>
+    <p>I converted the youtube video bellow to a mp4 (you can use any online converter, I used <a href="https://320ytmp3.com/en45/youtube-to-mp4">320YTMP3</a>).</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LjCzPp-MK48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p>I first added the video to the initial html file. I added autoplay to make the video start playing right away, muted to play without sound, and loop to play for an infinite amount of times</p>
+    <pre>
+        <code>
+            &lt;video id="videoBG" poster="poster.JPG" autoplay muted loop&gt;
+                &lt;source src="footage1.mp4" type="video/mp4"&gt;
+            &lt;/video&gt;
+        </code>
+    </pre>
+    <p>In the css file I set the position to fixed to keep the video there, and set z minus 1 to push the video to the background</p>
+    <pre>
+        <code>
+            #videoBG {
+                position:fixed;
+                z-index: -1;
+            }
+        </code>
+    </pre>
+    <img src="images/2.PNG" alt="">
+    <p>It seems to work! But it isn't responsive (doesn't change when you resize the screen). To make it responsive I added this to the CSS document:</p>
+    <pre>
+        <code>
+            #videoBG {
+                position:fixed;
+                z-index: -1;
+            /*not work if the screen ratio is below 16/9*/
+                width:100%;     
+                height: auto;
+            }
+        </code>
+    </pre>
+    <p>We need to keep the width to 100% and scale the height. We can achieve this by using min-aspect-ratio 16/9.</p>
+    <pre>
+        <code>
+            @media (min-aspect-ratio: 16/9) {
+                #videoBG {
+                    width:100%;
+                    height: auto;
+                }
+            }
+        </code>
+    </pre>
+    <p>Then we'll keep the height 100% when max-aspect ratio is bellow 16/9</p>
+    <pre>
+        <code>
+            @media (max-aspect-ratio: 16/9) {
+                #videoBG { 
+                    width:auto;
+                    height: 100%;
+                }
+            }
+        </code>
+    </pre>
+    <p>Here's what it looks like:</p>
+    <img src="images/3.PNG" alt="">
+
+</body>
+
+</html>
