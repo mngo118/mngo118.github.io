@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <title>Classmate Demos | Myan Ngo</title>
 </head>
 
@@ -16,6 +17,30 @@
             <p class="sLink"> Filler Text </p>
         </span>
     </main>
+    <div id="slideshow">
+        <div>
+            <img src="images/1.jpg" alt="">
+        </div>
+        <div>
+            <img src="images/2.png" alt="">
+        </div>
+        <div>
+            <img src="images/3.jpg" alt="">
+        </div>
+    </div>
+
+    <script>
+        $("#slideshow > div:gt(0)").hide();
+
+        setInterval(function() {
+            $('#slideshow > div:first')
+                .fadeOut(1000)
+                .next()
+                .fadeIn(1000)
+                .end()
+                .appendTo('#slideshow');
+        }, 3000);
+    </script>
 </body>
 
 </html>
