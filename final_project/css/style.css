@@ -25,8 +25,8 @@ button:hover {
 #textdiv {
     /* Source: https://www.w3schools.com/howto/howto_css_image_text.asp */
     position: absolute;
-    bottom: 8px;
-    left: 16px;
+    bottom: 5%;
+    left: 4%;
     color: white;
     padding: 2%;
     line-height: 90%;
@@ -52,4 +52,56 @@ button:hover {
         width: auto;
         height: 100%;
     }
+}
+
+.nav {
+    list-style-type: none;
+    width: 100%;
+    overflow: hidden;
+    background-color: #d5b895;
+    padding-left: 5%;
+}
+
+.nav a {
+    color: white;
+    float: left;
+    text-decoration: none;
+    width: 16.667%;
+    padding: 2% 0%;
+    display: block;
+}
+
+
+/* Source (using z index & absolute position to layer images): https://www.w3schools.com/cssref/pr_pos_z-index.asp */
+
+#home-text1 {
+    position: absolute;
+    width: 50%;
+    background-color: #fae4cc;
+    color: #a67a5b;
+    padding: 2%;
+    line-height: 90%;
+    right: 10%;
+    top: 20%;
+}
+
+#home-img1 {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+}
+
+#home-img1 img {
+    width: 30%;
+    height: auto;
+}
+
+#home-bg1 {
+    position: absolute;
+    width: 50%;
+    height: 95%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background-color: #bba187;
 }
