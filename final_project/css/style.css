@@ -1,0 +1,55 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    font-size: 1.4vw;
+}
+
+button {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #fff4e0;
+    border: none;
+    color: #bba187;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #bba187;
+    color: #fff4e0;
+}
+
+#textdiv {
+    /* Source: https://www.w3schools.com/howto/howto_css_image_text.asp */
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    color: white;
+    padding: 2%;
+    line-height: 90%;
+}
+
+
+/* Source: https://redstapler.co/responsive-css-video-background/ */
+
+#videoBG {
+    position: fixed;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    #videoBG {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    #videoBG {
+        width: auto;
+        height: 100%;
+    }
+}
