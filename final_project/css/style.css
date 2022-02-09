@@ -55,20 +55,27 @@ button:hover {
 }
 
 .nav {
+    text-align: center;
+    box-sizing: border-box;
     list-style-type: none;
     width: 100%;
     overflow: hidden;
     background-color: #d5b895;
-    padding-left: 5%;
 }
 
 .nav a {
+    box-sizing: border-box;
     color: white;
     float: left;
     text-decoration: none;
     width: 16.667%;
-    padding: 2% 0%;
+    padding: 2%;
     display: block;
+}
+
+.nav a:hover {
+    background-color: #fff4e0;
+    color: #a67a5b;
 }
 
 
@@ -80,15 +87,14 @@ button:hover {
     background-color: #fae4cc;
     color: #a67a5b;
     padding: 2%;
-    line-height: 90%;
     right: 10%;
-    top: 20%;
+    top: 28%;
 }
 
 #home-img1 {
     position: absolute;
     left: 10%;
-    top: 10%;
+    top: 20%;
 }
 
 #home-img1 img {
@@ -101,7 +107,7 @@ button:hover {
     width: 50%;
     height: 95%;
     z-index: -1;
-    top: 0;
+    top: 5%;
     left: 0;
     background-color: #bba187;
 }
