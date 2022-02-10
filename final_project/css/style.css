@@ -61,11 +61,16 @@ button:hover {
     }
 }
 
+.logo {
+    width: 40%;
+    padding: 2%;
+}
+
 .nav {
     text-align: center;
     box-sizing: border-box;
     list-style-type: none;
-    width: 100%;
+    width: 60%;
     overflow: hidden;
     background-color: #d5b895;
 }
@@ -75,7 +80,7 @@ button:hover {
     color: white;
     float: left;
     text-decoration: none;
-    width: 16.667%;
+    width: 10%;
     padding: 2%;
     display: block;
 }
