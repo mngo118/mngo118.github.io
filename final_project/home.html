@@ -6,18 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>Myan Ngo Portfolio</title>
 </head>
 
 <body>
-    <div class="nav">
-        <a href="home.html">home</a>
-        <a href="about.html">about me</a>
-        <a href="portfolio.html">web design</a>
-        <a href="graphic_design.html">graphic design</a>
-        <a href="before_after.html">before & after</a>
-        <a href="contact.html">contact me</a>
-    </div>
+    <div w3-include-html="nav.html"></div>
     <div id="home-text1">
         <h1>Hi I'm Myan Ngo</h1>
         <p>I've taken Web Design 1, 2, and the Advanced Web Design Seminar. I've also taken Graphic Design 1. Here I'll walk you through all of the projects I've completed throughout these courses.</p>
@@ -27,6 +22,11 @@
     </div>
     <div id="home-bg1"></div>
 
+    <script>
+        w3.includeHTML();
+    </script>
+
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>

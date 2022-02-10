@@ -25,11 +25,18 @@ button:hover {
 #textdiv {
     /* Source: https://www.w3schools.com/howto/howto_css_image_text.asp */
     position: absolute;
-    bottom: 5%;
-    left: 4%;
+    bottom: 6%;
+    left: 8%;
     color: white;
     padding: 2%;
     line-height: 90%;
+}
+
+#lp-footer {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    color: #bd9975;
 }
 
 
