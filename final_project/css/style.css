@@ -1,9 +1,15 @@
+* {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     width: 100vw;
     height: 100vh;
     margin: 0;
     font-size: 1.4vw;
+    background-color: #f3eae2;
 }
 
 button {
@@ -23,7 +29,9 @@ button:hover {
 }
 
 .header {
+    z-index: 3;
     position: sticky;
+    top: -5px;
     width: 100%;
     display: grid;
     grid-template-columns: 20% 80%;
@@ -41,12 +49,10 @@ button:hover {
 .nav {
     grid-column: 2;
     text-align: center;
-    box-sizing: border-box;
     list-style-type: none;
 }
 
 .nav a {
-    box-sizing: border-box;
     color: white;
     float: left;
     text-decoration: none;
@@ -60,6 +66,75 @@ button:hover {
     color: #a67a5b;
 }
 
+.footer {
+    background-color: #462a09;
+    color: #fff4e0;
+    padding: 2%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: auto auto auto;
+    /* TO DO: FIGURE OUT HOW TO MAKE IT AT BOTTOM OF EVERY PAGE */
+    position: absolute;
+    top: 370%;
+    text-align: center;
+}
+
+.footer hr {
+    color: #fff4e0;
+}
+
+.footer a {
+    color: #fff4e0;
+    text-decoration: none;
+}
+
+.footer i {
+    padding: 10px;
+    font-size: 1.3rem;
+}
+
+.footer a:hover {
+    color: #a67a5b;
+}
+
+.footer-item1 {
+    padding-top: 20px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.footer-item2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.footer-item3 {
+    padding-top: 20px;
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.footer-item4 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.footer-item5 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.footer-item6 {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.footer-item7 {
+    grid-column: 2;
+    grid-row: 3;
+}
+
 #textdiv {
     /* Source: https://www.w3schools.com/howto/howto_css_image_text.asp */
     position: absolute;
@@ -67,7 +142,6 @@ button:hover {
     left: 7%;
     color: white;
     padding: 2%;
-    line-height: 90%;
 }
 
 #lp-footer {
@@ -108,7 +182,7 @@ button:hover {
     background-color: #fae4cc;
     color: #a67a5b;
     padding: 2%;
-    right: 10%;
+    right: 14%;
     top: 28%;
 }
 
@@ -126,9 +200,143 @@ button:hover {
 #home-bg1 {
     position: absolute;
     width: 50%;
-    height: 95%;
+    height: 110%;
     z-index: -1;
     top: 5%;
     left: 0;
     background-color: #bba187;
+}
+
+#home-text2 {
+    position: absolute;
+    width: 40%;
+    color: #fae4cc;
+    background-color: #aa866b;
+    padding: 2%;
+    left: 20%;
+    top: 150%;
+}
+
+#home-text2 a {
+    color: #fae4cc;
+}
+
+#home-text2 a:hover {
+    color: #bd9975;
+}
+
+#home-img2 {
+    position: absolute;
+    left: 60%;
+    top: 130%;
+}
+
+#home-img2 img {
+    width: 70%;
+    height: auto;
+}
+
+#home-bg2 {
+    position: absolute;
+    width: 90%;
+    height: 130%;
+    z-index: -1;
+    top: 120%;
+    right: 5%;
+    background-color: #462a09;
+}
+
+#home-text3 {
+    position: absolute;
+    width: 45%;
+    color: #462a09;
+    background-color: #fff4e0;
+    padding: 2%;
+    right: 15%;
+    top: 290%;
+}
+
+#home-text3 a {
+    color: #462a09;
+}
+
+#home-text3 a:hover {
+    color: #a67a5b;
+}
+
+#home-img3 {
+    position: absolute;
+    left: 15%;
+    top: 280%;
+}
+
+#home-img3 img {
+    width: 30%;
+    height: auto;
+}
+
+#home-bg3 {
+    position: absolute;
+    width: 75%;
+    height: 95%;
+    z-index: -1;
+    top: 260%;
+    left: 25%;
+    background-color: #bba187;
+}
+
+#about-text1 {
+    position: absolute;
+    width: 45%;
+    height: 60%;
+    background-color: #fae4cc;
+    color: #a67a5b;
+    padding: 4%;
+    right: 10%;
+    top: 20%;
+}
+
+#about-img1 {
+    position: absolute;
+    left: 10%;
+    top: 40%;
+    width: 30%;
+    height: 70%;
+    background-color: white;
+}
+
+#about-bg1 {
+    position: absolute;
+    width: 90%;
+    height: 110%;
+    z-index: -2;
+    top: 10%;
+    right: 5%;
+    background-color: #a67a5b;
+}
+
+#about-bg2 {
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    z-index: -1;
+    top: 30%;
+    left: 20%;
+    background-color: #bba187;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .scroll-animation {
+        animation-name: appear;
+        animation-duration: 2s;
+    }
 }

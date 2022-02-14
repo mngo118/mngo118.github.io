@@ -6,35 +6,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <script src="https://www.w3schools.com/lib/w3.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <title>Myan Ngo Portfolio</title>
+    <script src="js/script.js"></script>
+    <title>Myan Ngo | Home</title>
 </head>
 
 <body>
-    <!-- Not working for some reason: <div w3-include-html="nav.html"></div> -->
-    <div class="header">
-        <div class="logo">
-            <h3 onclick="window.location.href='home.html';">· M N ·</h3>
-        </div>
-        <div class="nav">
-            <a href="home.html">home</a>
-            <a href="about.html">about me</a>
-            <a href="portfolio.html">web design</a>
-            <a href="graphic_design.html">graphic design</a>
-            <a href="before_after.html">before & after</a>
-            <a href="contact.html">contact me</a>
-        </div>
-    </div>
+    <div w3-include-html="nav.html"></div>
 
-    <div id="home-text1">
+    <div class="scroll-animation" id="home-text1">
         <h1>Hi I'm Myan Ngo</h1>
         <p>I've taken Web Design 1, 2, and the Advanced Web Design Seminar. I've also taken Graphic Design 1. Here I'll walk you through all of the projects I've completed throughout these courses.</p>
     </div>
-    <div id="home-img1">
+    <div class="scroll-animation" id="home-img1">
         <img src="images/pfp.jpg" alt="">
     </div>
     <div id="home-bg1"></div>
+
+    <div class="scroll-animation" id="home-text2">
+        <h2>Web Design Home Page Facelift Project</h2>
+        <p>For this project we had to revamp an existing home page. I chose the Exit 5 Korean BBQ home page. This is a recent project that I think represents my minimalist aesthetic. Click <a href="portfolio.html">here</a> to go to my web design portfolio
+            or <a href="before_after.html">here</a> to see my web design progression!</p>
+    </div>
+    <div class="scroll-animation" id="home-img2">
+        <img src="images/exit5.png" alt="">
+    </div>
+    <div id="home-bg2"></div>
+
+    <div class="scroll-animation" id="home-text3">
+        <h2>Graphic Design Logo Project</h2>
+        <p>For this project we were tasked to create a logo for a new company. I was given a new boba store in Bellevue to create a logo and name for. Click <a href="graphic_design.html">here</a> to see more graphic design projects!</p>
+    </div>
+    <div class="scroll-animation" id="home-img3">
+        <img src="images/logo.jpg" alt="">
+    </div>
+    <div id="home-bg3"></div>
+
+    <div class="footer">
+        <div class="footer-item1">
+            <hr>
+        </div>
+        <div class="footer-item2">
+            <h2>Myan Ngo</h2>
+            <p>/ Ngô Mỹ An /</p>
+        </div>
+        <div class="footer-item3">
+            <hr>
+        </div>
+        <div class="footer-item4">
+            <p><a href="portfolio.html">Portfolio</a></p>
+            <p><a href="before_after.html">Progression</a></p>
+            <p><a href="about.html">About</a></p>
+        </div>
+        <div class="footer-item5">
+            <i class="bi bi-instagram" onclick="parent.open('https://www.instagram.com/yellowcatt_/')"></i>
+            <i class="bi bi-pinterest" onclick="parent.open('https://www.pinterest.com/myancat118/')"></i>
+            <i class="bi bi-twitter" onclick="parent.open('https://www.twitter.com/')"></i>
+            <!-- I don't have anymore social media but I think three icons look way better -->
+        </div>
+        <div class="footer-item6">
+            <p>(206) 427 7216</p>
+            <a href="mailto:mngo@eastsideprep.org">mngo@eastsideprep.org</a>
+            <p>Seattle, WA</p>
+        </div>
+        <div class="footer-item7">
+            <p>&copy; Myan Ngo 2022</p>
+        </div>
+    </div>
 
     <script>
         w3.includeHTML();
