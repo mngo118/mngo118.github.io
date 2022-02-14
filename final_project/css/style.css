@@ -37,6 +37,7 @@ button:hover {
     grid-template-columns: 20% 80%;
     background-color: #d5b895;
     line-height: 90%;
+    overflow-y: hidden;
 }
 
 .logo {
