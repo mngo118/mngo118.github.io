@@ -325,32 +325,19 @@ button:hover {
     background-color: #bba187;
 }
 
-@keyframes appear {
-    0% {
-        opacity: 0%;
-    }
-    100% {
-        opacity: 100%;
-    }
+
+/* Source: https://codepen.io/alvarotrigo/pen/PoKamZy */
+
+.appear {
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
 }
 
-@media screen {
-    .scroll-animation1 {
-        animation-name: appear;
-        animation-duration: 2s;
-    }
+.appear.active {
+    transform: translateY(0);
+    opacity: 1;
 }
 
-@media screen {
-    .scroll-animation2 {
-        animation-name: appear;
-        animation-duration: 2s;
-    }
-}
 
-@media screen {
-    .scroll-animation3 {
-        animation-name: appear;
-        animation-duration: 2s;
-    }
-}
+/* TO DO: Make another animation for the top element to load right as you load page */
