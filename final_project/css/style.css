@@ -36,7 +36,7 @@ button:hover {
     display: grid;
     grid-template-columns: 20% 80%;
     background-color: #d5b895;
-    line-height: 90%;
+    line-height: 105%;
 }
 
 .logo {
@@ -44,7 +44,6 @@ button:hover {
     padding-left: 10%;
     color: #fff4e0;
     cursor: pointer;
-    overflow-y: hidden;
 }
 
 .nav {
@@ -335,8 +334,22 @@ button:hover {
     }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .scroll-animation {
+@media screen {
+    .scroll-animation1 {
+        animation-name: appear;
+        animation-duration: 2s;
+    }
+}
+
+@media screen {
+    .scroll-animation2 {
+        animation-name: appear;
+        animation-duration: 2s;
+    }
+}
+
+@media screen {
+    .scroll-animation3 {
         animation-name: appear;
         animation-duration: 2s;
     }

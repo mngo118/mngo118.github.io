@@ -12,4 +12,6 @@ const observer = new IntersectionObserver(entries => {
     });
 });
 
-observer.observe(document.querySelector('.scroll-animation'));
+observer.observe(document.querySelector('.scroll-animation1'));
+observer.observe(document.querySelector('.scroll-animation2'));
+observer.observe(document.querySelector('.scroll-animation3'));
