@@ -75,6 +75,7 @@ header {
     width: 16%;
     padding: 2%;
     display: block;
+    z-index: 6;
 }
 
 .nav a:hover {
