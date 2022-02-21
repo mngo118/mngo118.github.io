@@ -38,7 +38,7 @@ header {
     position: sticky;
     top: -50px;
     background-color: #d5b895;
-    line-height: 105%;
+    line-height: 150%;
     overflow-y: hidden;
 }
 
@@ -107,6 +107,10 @@ header {
     top: 160%;
 }
 
+.footer.contact {
+    top: 100%;
+}
+
 .footer hr {
     color: #fff4e0;
 }
@@ -116,13 +120,17 @@ header {
     text-decoration: none;
 }
 
+.footer a:hover {
+    color: #a67a5b;
+}
+
 .footer i {
     padding: 10px;
     font-size: 1.3rem;
     cursor: pointer;
 }
 
-.footer a:hover {
+.footer i:hover {
     color: #a67a5b;
 }
 
@@ -204,6 +212,7 @@ header {
     padding: 2%;
     right: 14%;
     top: 28%;
+    z-index: 3;
     animation-name: first-element;
     animation-duration: 1.5s;
 }
@@ -217,7 +226,7 @@ header {
 }
 
 #home-img1 img {
-    width: 30%;
+    width: 35%;
     height: auto;
 }
 
@@ -327,12 +336,14 @@ header {
 #about-img1 {
     position: absolute;
     left: 10%;
-    top: 37%;
-    width: 30%;
-    height: 70%;
-    background-color: white;
+    top: 35%;
     animation-name: first-element;
     animation-duration: 1.5s;
+}
+
+#about-img1 img {
+    width: 35%;
+    height: auto;
 }
 
 #about-bg1 {
@@ -348,7 +359,7 @@ header {
 #about-bg2 {
     position: absolute;
     width: 30%;
-    height: 85%;
+    height: 87%;
     z-index: -1;
     top: 30%;
     left: 20%;
@@ -417,6 +428,22 @@ header {
     width: 65%;
     padding-bottom: 10%;
     margin-bottom: 2%;
+}
+
+#submit-button {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #fff4e0;
+    border: none;
+    color: #a67a5b;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#submit-button:hover {
+    background-color: #bba187;
+    color: #fff4e0;
 }
 
 

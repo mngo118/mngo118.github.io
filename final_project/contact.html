@@ -22,18 +22,56 @@
         </div>
         <div id="contact-text2">
             <h2>Send Business Inquires</h2>
-            <input type="text" name="name" id="name" placeholder="Name">
-            <br>
-            <input type="email" name="email" id="email" placeholder="Email">
-            <br>
-            <input type="text" name="msg" id="msg" placeholder="Message">
-            <br>
-            <button>submit</button>
+            <form>
+                <input type="text" name="name" id="name" placeholder="Name">
+                <br>
+                <input type="email" name="email" id="email" placeholder="Email">
+                <br>
+                <input type="text" name="msg" id="msg" placeholder="Message">
+                <br>
+                <input type="reset" value="submit" id="submit-button" onclick="thank()">
+            </form>
+        </div>
+    </div>
+
+    <div class="contact footer">
+        <div class="footer-item1">
+            <hr>
+        </div>
+        <div class="footer-item2">
+            <h2>Myan Ngo</h2>
+            <p>/ Ngô Mỹ An /</p>
+        </div>
+        <div class="footer-item3">
+            <hr>
+        </div>
+        <div class="footer-item4">
+            <p><a href="portfolio.html">Portfolio</a></p>
+            <p><a href="before_after.html">Progression</a></p>
+            <p><a href="about.html">About</a></p>
+        </div>
+        <div class="footer-item5">
+            <i class="bi bi-instagram" onclick="parent.open('https://www.instagram.com/yellowcatt_/')"></i>
+            <i class="bi bi-pinterest" onclick="parent.open('https://www.pinterest.com/myancat118/')"></i>
+            <i class="bi bi-twitter" onclick="parent.open('https://www.twitter.com/')"></i>
+            <!-- I don't have anymore social media but I think three icons look way better -->
+        </div>
+        <div class="footer-item6">
+            <p>(206) 427 7216</p>
+            <a href="mailto:mngo@eastsideprep.org">mngo@eastsideprep.org</a>
+            <p>Seattle, WA</p>
+        </div>
+        <div class="footer-item7">
+            <p>&copy; Myan Ngo 2022</p>
         </div>
     </div>
 
     <script>
         w3.includeHTML();
+
+        function thank() {
+            alert("Thank you for your interest! We will email you back shortly :)");
+        }
     </script>
 
     <script type="text/javascript" src="js/script.js"></script>
