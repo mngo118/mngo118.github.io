@@ -393,17 +393,6 @@ header {
     color: #aa866b;
 }
 
-#contact-title {
-    grid-row: 1;
-    grid-column: 1 / span 2;
-    color: #fff4e0;
-    background-color: #462a09;
-}
-
-#contact-title hr {
-    color: #fff4e0;
-}
-
 #contact-text1 {
     background-color: #aa866b;
     color: white;
