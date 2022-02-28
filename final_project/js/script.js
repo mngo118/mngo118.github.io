@@ -24,6 +24,8 @@ function reveal() {
 
 window.addEventListener("scroll", reveal);
 
+// Source: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+
 function myFunction() {
     var x = document.getElementById("my-nav");
     if (x.className === "nav") {
