@@ -33,12 +33,6 @@ button:hover {
 
 /* HEADER */
 
-header {
-    position: absolute;
-    line-height: 150%;
-    overflow-y: hidden;
-}
-
 .header-inner {
     position: absolute;
     top: 0;
@@ -47,6 +41,8 @@ header {
     display: grid;
     grid-template-columns: 20% 80%;
     background-color: #d5b895;
+    overflow-y: hidden;
+    line-height: 150%;
 }
 
 .logo {
@@ -453,6 +449,46 @@ header {
 }
 
 
+/* GRAPHIC DESIGN PAGE */
+
+#gd-text1 {
+    position: absolute;
+    top: 10%;
+    z-index: 3;
+    width: 50%;
+    height: 100%;
+    background-color: #462a09;
+    color: white;
+    padding: 15% 10%;
+    animation-name: first-element;
+}
+
+#gd-img1 {
+    position: absolute;
+    top: 20%;
+    left: 55%;
+    animation-name: first-element;
+}
+
+#gd-img1 img {
+    width: 45%;
+}
+
+#gd-img2 {
+    position: absolute;
+    top: 50%;
+    left: 78%;
+    animation-name: first-element;
+}
+
+#gd-img2 img {
+    width: 88%;
+}
+
+
+/* Source: Taras transition: max-height: 5s; hover > max-height 100% */
+
+
 /* ANIMATIONS */
 
 
@@ -533,6 +569,32 @@ header {
 @media screen and (max-width: 600px) {
     #home-img1 img {
         width: 50%;
+    }
+    #home-text1 {
+        right: 5%;
+    }
+    #home-bg1 {
+        height: 100%;
+    }
+    #home-img2 img {
+        width: 90%;
+        height: auto;
+    }
+    #home-text2 {
+        left: 10%;
+        width: 50%;
+    }
+    #home-img3 img {
+        width: 50%;
+        height: auto;
+    }
+    #home-img3 {
+        left: 6%;
+    }
+    #home-text3 {
+        right: 6%;
+        width: 50%;
+        z-index: 3;
     }
 }
 
