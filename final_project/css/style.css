@@ -461,6 +461,7 @@ button:hover {
     color: white;
     padding: 15% 10%;
     animation-name: first-element;
+    animation-duration: 1.5s;
 }
 
 #gd-img1 {
@@ -468,6 +469,7 @@ button:hover {
     top: 20%;
     left: 55%;
     animation-name: first-element;
+    animation-duration: 1.5s;
 }
 
 #gd-img1 img {
@@ -479,6 +481,7 @@ button:hover {
     top: 50%;
     left: 78%;
     animation-name: first-element;
+    animation-duration: 1.5s;
 }
 
 #gd-img2 img {
