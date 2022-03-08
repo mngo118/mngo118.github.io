@@ -1,12 +1,9 @@
 * {
     box-sizing: border-box;
-    overflow-x: hidden;
 }
 
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    width: 100vw;
-    height: 100vh;
     margin: 0;
     background-color: #f3eae2;
 }
@@ -106,6 +103,10 @@ button:hover {
 
 .footer.pricing {
     top: 140%;
+}
+
+.footer.portfolio {
+    top: 370%;
 }
 
 .footer hr {
@@ -620,11 +621,6 @@ button:hover {
     animation-duration: 1.5s;
 }
 
-.wp-text div:hover {
-    background-color: #a67a5b;
-    color: #f3eae2;
-}
-
 #gd-pricing {
     display: grid;
     grid-template-columns: 32% 32% 32%;
@@ -669,9 +665,139 @@ button:hover {
     width: 100%;
 }
 
-.gp-text div:hover {
-    background-color: #a67a5b;
+
+/* WEB PORTFOLIO PAGE */
+
+#portfolio-div {
+    position: absolute;
+    top: 0;
+    display: grid;
+    width: 100%;
+    padding: 10%;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto auto auto auto auto;
+    grid-gap: 3%;
+    text-align: center;
+    animation-name: first-element;
+    animation-duration: 1.5s;
+}
+
+#portfolio-div img {
+    width: 80%;
+}
+
+#portfolio-title {
+    grid-column: 1 / span 3;
+    grid-row: 1;
     color: #462a09;
+}
+
+#portfolio1 {
+    padding: 2%;
+    grid-column: 1;
+    grid-row: 2;
+    color: #f3eae2;
+    background-color: #462a09;
+    cursor: pointer;
+}
+
+#portfolio2 {
+    padding: 2%;
+    grid-column: 2;
+    grid-row: 2;
+    color: #f3eae2;
+    background-color: #a67a5b;
+    cursor: pointer;
+}
+
+#portfolio3 {
+    padding: 2%;
+    grid-column: 3;
+    grid-row: 2;
+    color: #f3eae2;
+    background-color: #bd9975;
+    cursor: pointer;
+}
+
+#portfolio4 {
+    padding: 2%;
+    grid-column: 1;
+    grid-row: 3;
+    color: #462a09;
+    background-color: #d5b895;
+    cursor: pointer;
+}
+
+#portfolio5 {
+    padding: 2%;
+    grid-column: 2;
+    grid-row: 3;
+    color: #f3eae2;
+    background-color: #bba187;
+    cursor: pointer;
+}
+
+#portfolio6 {
+    padding: 2%;
+    grid-column: 3;
+    grid-row: 3;
+    color: #f3eae2;
+    background-color: #462a09;
+    cursor: pointer;
+}
+
+#portfolio7 {
+    padding: 2%;
+    grid-column: 1;
+    grid-row: 4;
+    color: #f3eae2;
+    background-color: #a67a5b;
+    cursor: pointer;
+}
+
+#portfolio8 {
+    padding: 2%;
+    grid-column: 2;
+    grid-row: 4;
+    color: #f3eae2;
+    background-color: #462a09;
+    cursor: pointer;
+}
+
+#portfolio9 {
+    padding: 2%;
+    grid-column: 3;
+    grid-row: 4;
+    color: #f3eae2;
+    background-color: #bd9975;
+    cursor: pointer;
+}
+
+#portfolio10 {
+    padding: 2%;
+    grid-column: 1;
+    grid-row: 5;
+    color: #f3eae2;
+    background-color: #462a09;
+    cursor: pointer;
+}
+
+#portfolio11 {
+    padding: 2%;
+    grid-column: 2;
+    grid-row: 5;
+    color: #462a09;
+    background-color: #aa866b;
+    cursor: pointer;
+}
+
+#portfolio12 {
+    padding: 2%;
+    grid-column: 3;
+    grid-row: 5;
+    color: #f3eae2;
+    background-color: #bd9975;
+    cursor: pointer;
 }
 
 
